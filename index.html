@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag-and-Drop Portfolio Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <h1>Drag-and-Drop Portfolio Builder</h1>
+
+  </header>
+
+  <!-- Sidebar and Workspace -->
+  <div class="container">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+      <h2>Drag Options</h2>
+      <ul id="draggable-options">
+        <li class="draggable" data-type="introduction">Introduction</li>
+        <li class="draggable" data-type="skills">Skills</li>
+        <li class="draggable" data-type="education">Education</li>
+        <li class="draggable" data-type="experience">Experience</li>
+        <li class="draggable" data-type="projects">Projects</li>
+      </ul>
+    </aside>
+
+    <!-- Right Workspace -->
+    <section class="workspace">
+      <h2>Workspace</h2>
+      <div id="workspace-box"></div>
+    </section>
+  </div>
+
+  <!-- Export Options -->
+  <section id="export">
+    <h2>Export Your Portfolio</h2>
+    <button id="export-html">Export as HTML</button>
+    <button id="export-json">Export as JSON</button>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+  <script defer src="script.js"></script>
+</body>
+</html>
